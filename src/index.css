@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.custom-dot-list {
+  width: 50%; /* Set the desired width of the dot list */
+  margin: 0 auto; /* Center the dots horizontally */
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Add spacing between the dots */
+}
+
+.custom-dot-list li button {
+  width: 8vw; /* Customize dot size */
+  height: 4px;
+  border-radius: 10px;
+  background-color: rgb(198, 195, 195); 
+  border: none;
+  transition: 0.5s;
+}
+.custom-dot-list li button:hover{
+  height: 7px;
+  background-color: #ccc;
+}
+
+.custom-dot-list li.slick-active button {
+  background-color: #333; /* Active dot color */
+}
+
+/* -----------SLIDER---------- */
+.container{
+  /* background-color: black; */
+}
+.image-container {
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover {
+  transform: scale(1.1); /* Zoom out the image slightly */
+}
+
